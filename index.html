@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/day/182.png">
+    <title>Weather</title>
+</head>
+<body>
+    <header>
+        <h1>Weather</h1>
+        <p>Weather forecasting of certain citites / regions</p>
+    </header>
+    <section>
+        <div class="citySearch">
+            <h3>
+                Search for the city
+            </h3>
+            <span><input id="searchCity" type="text" title="searchCity" placeholder="City Name"><img id="searchIcon" src="images/icons8-search.svg"></span>
+            <!-- <button id="submitCity" title="submit">Find</button> -->
+        </div>
+    </section>
+    <section class="city-info" id="cityInfo">
+        <h3 id="cityHeader">Information</h3>
+        <p class="city-data country" id="country">City , Country</p>
+        
+        <p class="city-data coordinates" id="latitude"><span>Latitude:</span></p>
+        <p class="city-data coordinates" id="longitude">Longitude:</p>
+    </section>
+    <section class="main-info">
+        <h3 >Today</h3>
+        <p class="date" id="date">date</p>
+        <p class="info" id="temp"><span>Feels like</span></p>
+        <p class="info" id="pascal">Pressure: </p>
+        <p class="info" id="humidity">Humidity: </p>
+    </section>
+    <section id="forecast">
+        <div class="days"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <!-- <div id="test"></div> -->
+</body>
+<script src="index.js"></script>
+</html> 
