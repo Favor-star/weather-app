@@ -7,6 +7,7 @@ function getApi() {
         return response.json();
     })
     .then((response) =>{
+        console.log(response)
         document.getElementById('feelsLike').innerHTML += `<span>${response.current.feelslike_c} <sup>0</sup>C</span>`
         document.getElementById('country').innerHTML = `${response.location.name} , ${response.location.country}`;
         document.getElementById('latitude').innerHTML += `<span>${response.location.lat}</span>`;
@@ -24,7 +25,16 @@ function getApi() {
         nextDates.forEach((element)=>{
             element.innerHTML = response.forecast.forecastday[index].date;
             index++;
-        })
+        });
+        let newIndex = 0;
+        let forecastData = document.querySelectorAll(".forecast-content");
+        forecastData.forEach((elem)=>{
+            elem.innerHTML = `<span><img src='${response.forecast.forecastday[newIndex].day.condition.icon}'></span>
+            <span style="color:#CECE5A;">${response.forecast.forecastday[newIndex].day.condition.text}</span>
+            <span>Max Temp: ${response.forecast.forecastday[newIndex].day.maxtemp_c} <sup>0</sup>C</span>
+            <span>Min Temp: ${response.forecast.forecastday[newIndex].day.mintemp_c} <sup>0</sup>C</span>`;
+            newIndex++;
+        });
     })
 }
 window.onload = getApi();
