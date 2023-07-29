@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="images/day/182.png">
+    <link rel="shortcut icon" href="images/293.png">
+
     <title>Weather</title>
 </head>
 <body>
@@ -31,16 +32,38 @@
     <section class="main-info">
         <h3 >Today</h3>
         <p class="date" id="date">date</p>
-        <p class="info" id="temp"><span>Feels like</span></p>
-        <p class="info" id="pascal">Pressure: </p>
-        <p class="info" id="humidity">Humidity: </p>
+        <div id="conditions"></div>
+        <p class="info" id="feelsLike"><img class="icons" src="https://img.icons8.com/carbon-copy/100/FFFFFF/temperature.png" alt="temperature"><span class="info-text">Feels like</span></p>
+        <p class="info" id="pascal"><img class="icons" src="https://img.icons8.com/dotty/80/FFFFFF/pressure.png" alt="pressure"><span class="info-text">Pressure: </span></p>
+        <p class="info" id="humidity"><img class="icons" src="https://img.icons8.com/glyph-neue/64/FFFFFF/humidity.png" alt="humidity"><span class="info-text">Humidity: </span></p>
+        <div class="info " id="wind"><img class="icons" src="https://img.icons8.com/glyph-neue/64/FFFFFF/wind.png" alt="wind"/><span class="info-text">Wind:</span></div> 
+        <p id="lastUpdated" class="last-updated">Last updated: </p>
     </section>
     <section id="forecast">
-        <div class="days"></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="forecast-title" style="">Forecast</div>
+        <div style="width: 100%; height: 82%" id="forecastContent">
+            <div class="days">
+            <p class="nextDates" id="date0"></p>
+            <div class="forecast-content"></div>
+            </div>
+            <div class="days">
+                <p class="nextDates" id="date1"></p>
+                <div class="forecast-content"></div>
+            </div>
+            <div class="days">
+                <p class="nextDates" id="date2"></p>
+                <div class="forecast-content"></div>
+            </div>
+            <div class="days">
+                <p class="nextDates" id="date3"></p>
+                <div class="forecast-content"></div>
+            </div>
+            <div class="days">
+                <p class="nextDates" id="date4"></p>
+                <div class="forecast-content"></div>
+            </div>
+        </div>
+        
     </section>
     <!-- <div id="test"></div> -->
 </body>
