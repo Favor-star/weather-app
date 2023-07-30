@@ -14,6 +14,7 @@ body {
     /* background-image: url(images/icons8-clouds-80.png); */
     /* background-size: 80px; */
     background-blend-mode: multiply;
+    background-attachment: fixed;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 header h1 {
@@ -67,18 +68,20 @@ header p {
     background-color: inherit;
     border-bottom: 2px solid var(--color1);
     margin-bottom: 8px; 
+    color: var(--color1);
     
 }
 #searchCity:focus {
     border: none;
     background-color: inherit;
     border-bottom: 2px solid var(--color1);
-    
+    color: var(--color1);
     background: none;
     outline: none;
 }
 #searchCity::placeholder {
    color: var(--color1);
+   opacity: .5;
 }
 #searchIcon {
     display: inline-block;
@@ -89,6 +92,7 @@ header p {
     background-color: var(--color1);
     border-radius: 5px;
 }
+
 /* #submitCity {
     border-radius: 5px;
     border: var(--color2);
@@ -210,6 +214,7 @@ header p {
     border-radius: 10px;
     box-shadow:  4px 4px 2px 6px var(--shadow);
     padding-bottom: 10px;
+    margin-bottom: 50px;
 }
 #forecastContent {
     display: flex;

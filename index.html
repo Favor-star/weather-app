@@ -11,7 +11,7 @@
 <body>
     <header>
         <h1>Weather</h1>
-        <p>Weather forecasting of certain citites / regions</p>
+        <p>Weather forecasting of various cities / regions</p>
     </header>
     <section>
         <div class="citySearch">
@@ -26,18 +26,18 @@
         <h3 id="cityHeader">Information</h3>
         <p class="city-data country" id="country">City , Country</p>
         
-        <p class="city-data coordinates" id="latitude"><span>Latitude:</span></p>
-        <p class="city-data coordinates" id="longitude">Longitude:</p>
+        <p class="city-data coordinates"><span>Latitude:</span><span id="latitude"></span></p>
+        <p class="city-data coordinates">Longitude:<span id="longitude"></span></p>
     </section>
     <section class="main-info">
         <h3 >Today</h3>
         <p class="date" id="date">date</p>
         <div id="conditions"></div>
-        <p class="info" id="feelsLike"><img class="icons" src="https://img.icons8.com/carbon-copy/100/FFFFFF/temperature.png" alt="temperature"><span class="info-text">Feels like</span></p>
-        <p class="info" id="pascal"><img class="icons" src="https://img.icons8.com/dotty/80/FFFFFF/pressure.png" alt="pressure"><span class="info-text">Pressure: </span></p>
-        <p class="info" id="humidity"><img class="icons" src="https://img.icons8.com/glyph-neue/64/FFFFFF/humidity.png" alt="humidity"><span class="info-text">Humidity: </span></p>
-        <div class="info " id="wind"><img class="icons" src="https://img.icons8.com/glyph-neue/64/FFFFFF/wind.png" alt="wind"/><span class="info-text">Wind:</span></div> 
-        <p id="lastUpdated" class="last-updated">Last updated: </p>
+        <p class="info" ><img class="icons" src="https://img.icons8.com/carbon-copy/100/FFFFFF/temperature.png" alt="temperature"><span class="info-text">Feels like</span><span id="feelsLike"></span></p>
+        <p class="info"><img class="icons" src="https://img.icons8.com/dotty/80/FFFFFF/pressure.png" alt="pressure"><span class="info-text">Pressure: </span ><span id="pascal"></span></p>
+        <p class="info"><img class="icons" src="https://img.icons8.com/glyph-neue/64/FFFFFF/humidity.png" alt="humidity"><span class="info-text">Humidity: </span><span id="humidity"></span></p>
+        <div class="info "><img class="icons" src="https://img.icons8.com/glyph-neue/64/FFFFFF/wind.png" alt="wind"/><span class="info-text">Wind:</span><span id="wind"></span></div> 
+        <p class="last-updated">Last updated: <span id="lastUpdated"></span> </p>
     </section>
     <section id="forecast">
         <div class="forecast-title">Forecast</div>
