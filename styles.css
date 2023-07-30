@@ -17,6 +17,7 @@ body {
     background-attachment: fixed;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 header h1 {
     text-align: center;
     color: var(--color1);
